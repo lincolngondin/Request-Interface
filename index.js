@@ -7,7 +7,7 @@ document.querySelector('#button').onclick = () => {
 
 document.querySelector('#button__more-headers').onclick = ()=>{
 	const elemento = document.createElement('div');
-	elemento.innerHTML = '<input type="text" name=""/>\n<span>:</span>\n<input type="text" name=""/>';
+	elemento.innerHTML = '<input type="text" class="header__input" name=""/>\n<span>:</span>\n<input class="header__input" type="text" name=""/>';
 	document.querySelector('#headers__list').appendChild(elemento);
 }
 

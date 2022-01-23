@@ -7,30 +7,40 @@
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-
-	<input type="text" id="url" value="" placeholde="URL" name=""/>
-	<select id="method">
-		<option>GET</option>
-		<option>POST</option>
-		<option>DELETE</option>
-		<option>PUT</option>
-	</select>
-	<button id="button">ENVIAR</button>
-	<div id="headers">
-		<h2>HEADERS</h2>
-		<p>nome:valor</p>
-		<div id="headers__list">
-			<div>
-				<input type="text" name=""/>
-				<span>:</span>
-				<input type="text" name=""/>
-			</div>
+	<header class="header">
+		<h1>Request Helper</h1>
+	</header>
+	<main class="main">
+		<div class="main__inputs">
+			<input type="text" id="url" class="url" value="" placeholder="URL" name=""/>
+			<select id="method" class="method">
+				<option>GET</option>
+				<option>POST</option>
+				<option>DELETE</option>
+				<option>PUT</option>
+			</select>
+			<button id="button" class="button">ENVIAR</button>
 		</div>
-		<button id="button__more-headers">+</button>
-	</div>
+
+		<div id="headers">
+			<h2>HEADERS</h2>
+			<p>nome:valor</p>
+			<div id="headers__list">
+				<div>
+					<input type="text" class="header__input" name=""/>
+					<span>:</span>
+					<input type="text" class="header__input" name=""/>
+				</div>
+			</div>
+			<button id="button__more-headers" class="button__more-headers">+</button>
+		</div>
+		<div id="response" class="response">
+			
+		</div>
+	</main>
+	<footer class="footer">
+		<p>Copyright 2022</p>
+	</footer>
 	<script type="text/javascript" src="index.js"></script>
-	<div id="response" class="response">
-		
-	</div>
 </body>
 </html>
