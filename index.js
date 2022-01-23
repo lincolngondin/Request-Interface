@@ -39,5 +39,4 @@ const getMethod = () =>{
 	return document.querySelector('#method').value;
 }
 
-console.log(getMethod())
 

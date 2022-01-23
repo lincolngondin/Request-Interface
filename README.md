@@ -1,0 +1,1 @@
+Interface para fazer requisições usando a API fetch
