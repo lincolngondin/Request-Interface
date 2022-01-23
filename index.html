@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Request Helper</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+
+	<input type="text" id="url" value="" placeholde="URL" name=""/>
+	<select id="method">
+		<option>GET</option>
+		<option>POST</option>
+		<option>DELETE</option>
+		<option>PUT</option>
+	</select>
+	<button id="button">ENVIAR</button>
+	<div id="headers">
+		<h2>HEADERS</h2>
+		<p>nome:valor</p>
+		<div id="headers__list">
+			<div>
+				<input type="text" name=""/>
+				<span>:</span>
+				<input type="text" name=""/>
+			</div>
+		</div>
+		<button id="button__more-headers">+</button>
+	</div>
+	<script type="text/javascript" src="index.js"></script>
+	<div id="response" class="response">
+		
+	</div>
+</body>
+</html>
